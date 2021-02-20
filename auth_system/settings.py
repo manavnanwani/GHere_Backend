@@ -27,9 +27,9 @@ SECRET_KEY = '8a+!yjnhv83!6pn%d7efm7c6ns)@8g=$rjatbac6vjany5mu85'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = ['http://127.0.0.1:8000','https://gamblehere.herokuapp.com']
 
 
 # Application definition
@@ -167,3 +167,19 @@ DJOSER = {
 
 
 AUTH_USER_MODEL = 'accounts.UserAccount'
+
+
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:8081",
+    "http://localhost:8000",
+    "https://gamblehere.netlify.app"
+]
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CSRF_TRUSTED_ORIGINS = [
+    'localhost:8081',
+    'https://gamblehere.netlify.app'
+]

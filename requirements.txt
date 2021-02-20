@@ -12,6 +12,7 @@ django-templated-mail==1.1.1
 djangorestframework==3.12.2
 djangorestframework-simplejwt==4.6.0
 djoser==2.1.0
+gunicorn==20.0.4
 idna==2.10
 importlib-metadata==1.7.0
 itypes==1.2.0

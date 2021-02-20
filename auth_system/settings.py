@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'rest_framework',
-    'djoser'
+    'djoser',
 ]
 
 MIDDLEWARE = [
@@ -157,7 +157,6 @@ DJOSER = {
         'user_delete': 'djoser.serializers.UserDeleteSerializer',
     }
 }
-
 
 
 AUTH_USER_MODEL = 'accounts.UserAccount'
